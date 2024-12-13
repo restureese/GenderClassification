@@ -4,12 +4,12 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 import os
 #save model
-from sklearn.externals import joblib
+import joblib
 
 import pandas as pd
 
 # logistic
-clf = SGDClassifier(loss="log")
+clf = SGDClassifier(loss="log_loss")
 
 #extraction feature string
 tf = TfidfVectorizer()
